@@ -13,7 +13,7 @@ body{
     padding: 1rem;
 }
 .image{
-    height: 150px;
+    height: 180px;
     width: 300px;
 }
 @media screen and (min-width:992px) {
