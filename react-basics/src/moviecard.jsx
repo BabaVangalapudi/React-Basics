@@ -1,8 +1,8 @@
 const Movie = (props)=>{
-    const {imageURL,title}=props
+    const {imageUrl,title}=props
     return (
       <div className='imagecontainer'>
-        <img src={imageURL} alt='image1' className='image'/>
+        <img src={imageUrl} alt='image1' className='image'/>
         <h1>{title}</h1>
       </div>
     )

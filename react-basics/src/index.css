@@ -16,6 +16,9 @@ body{
     height: 180px;
     width: 300px;
 }
+li{
+    list-style: none;
+}
 @media screen and (min-width:992px) {
     .container{
         display: grid;

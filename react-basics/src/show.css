@@ -1,0 +1,10 @@
+.showContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.showButton{
+    width: 100px;
+    color: black;
+    height: 50px;
+}
