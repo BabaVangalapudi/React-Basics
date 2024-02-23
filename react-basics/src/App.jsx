@@ -5,7 +5,6 @@ import initObj from './data'
 
 const App = () => {
   const [data, setData] = useState(initObj)
-
   const onDelete =(comingid)=>{
         const filterData = data.filter((eachitem)=>{
            return eachitem.id !== comingid
