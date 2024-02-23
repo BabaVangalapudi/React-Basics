@@ -1,10 +1,9 @@
 import React from 'react'
-import ListItems from './listitems'
-
+import Formvalidation from './formvalidation';
 const App = () => {
   return(
     <>
-    <ListItems/>
+    <Formvalidation/>
     </>
   )
 }
