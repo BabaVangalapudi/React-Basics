@@ -21,7 +21,9 @@ const Formvalidation = () => {
             email: usermail,
             password:userpassword
         }
-        console.log(obj)
+        if (obj.firstname ==="" || obj.email ==="" || obj.password){
+          alert('please fill all fields')
+        }
         setUsername('')
         setEmail('')
         setPassword('')

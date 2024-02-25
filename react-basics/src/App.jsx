@@ -1,9 +1,9 @@
 import React from 'react'
-import Formvalidation from './formvalidation';
+import Example from './useeffect';
 const App = () => {
   return(
     <>
-    <Formvalidation/>
+    <Example/>
     </>
   )
 }
