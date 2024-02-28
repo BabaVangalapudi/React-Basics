@@ -1,9 +1,9 @@
 import React from 'react'
-import Example from './useeffect';
+import Calculator from './calculator';
 const App = () => {
   return(
     <>
-    <Example/>
+    <Calculator/>
     </>
   )
 }

@@ -1,0 +1,26 @@
+.container{
+    width: 350px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+.button-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+}
+button{
+    background-color: rgb(197, 197, 244);
+    height: 45px;
+    width: 60px;
+    border: none;
+    color: rgb(1, 62, 48);
+}
+.display{
+    height: 40px;
+    width: 280px;
+}
