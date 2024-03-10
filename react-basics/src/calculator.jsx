@@ -4,11 +4,14 @@ import { useState } from 'react'
 
 const Calculator = () => {
     const [input,setInput] = useState('')
-    const [theme, setTheme] = useState('light')
+    const [theme, setTheme] = useState(true)
+    const [eq, setEq] = useState("")
+
     const onHandler = (value)=>{
       try {
         if (value ==='='){
           setInput(eval(input).toString())
+          eval(eq);
       }else if (value==='c'){
           setInput('')
       }else{
@@ -22,13 +25,16 @@ const Calculator = () => {
     const changeTheme= ()=>{
       setTheme(!theme)
     }
+
+
     const onHandleBack = ()=>{
       setInput((prevInput) => prevInput.slice(0, -1));
     }
+
   return (
-    <div className={'container ${theme}'}>
+    <div className={`container ${theme ? "dark": "white"}`}>
         <button className='changeTheme' onClick={changeTheme}>{theme ? 'White':'Dark'}</button>
-        <input type="text" readOnly value={input} className='display'/>
+        <input type="text" readOnly value={input} className='display_sol'/>
       <div className='button-container'> 
         <button onClick={()=>onHandler('7')}>7</button>
         <button onClick={()=>onHandler('8')}>8</button>
